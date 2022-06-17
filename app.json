@@ -42,10 +42,6 @@
     "OWNER_USERNAME": {
       "description": "botun sahibinin adresini girin.",
       "value": ""
-    },
-    "GROUP_SUPPORT": {
-      "description": "Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir."
-      "value": ""
      }
     },
   "buildpacks": [{
