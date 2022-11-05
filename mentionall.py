@@ -33,26 +33,26 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀GrupTaggerBot**\n **İle Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**👻Soyguncular TaggerBot**\n **İle Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
-                      [Button.url('İletişim', f"https://t.me/mytsahip")],
-                      [Button.url('Oyun Botu', f"https://t.me/Myt_game_bot")],
-		      [Button.url('Müzik Botu', 'https://t.me/Myt_Music_Bot')],
+		      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/Soyguncular_taggerbot?startgroup=a")],
+                      [Button.url('İletişim', f"https://t.me/Hzchavo")],
+                      [Button.url('Sahip', f"https://t.me/Moon_skkined_man")],
+		      [Button.url('Grubumuz', 'https://t.me/SoyguncularTR')],
                     ),
                     link_preview=False
                    )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 GrupTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**\n \n/durum - Botun Durumunu Gösterir \n\n/bagis : **Bağış Yapmak İstersen Basa Bilirsin.** \n \n /reklam - **Reklam Veya İş Birliği İçin Bu Komutu Kullanın.**"
+  helptext = "** 👻SoyguncularTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**\n \n/durum - Botun Durumunu Gösterir \n\n/bagis : **Bağış Yapmak İstersen Basa Bilirsin.** \n \n /reklam - **Reklam Veya İş Birliği İçin Bu Komutu Kullanın.**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
-                      [Button.url('İletişim', f"https://t.me/mytsahip")],
-                      [Button.url('Oyun Botu', f"https://t.me/Myt_game_bot")],
-		      [Button.url('Müzik Botu', 'https://t.me/Myt_Music_Bot')],
+                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{Soyguncular_taggerbot?startgroup=a")],
+                      [Button.url('İletişim', f"https://t.me/hzchavo")],
+                      [Button.url('Sahip', f"https://t.me/Moon_skkined_man")],
+		      [Button.url('Grubumuz', 'https://t.me/SoyguncularTR')],
                     ),
                     link_preview=False
                    )
@@ -117,7 +117,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @MytSahip*❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SoyguncularTR*❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -165,7 +165,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @MytSahip**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SoyguncularTR**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -230,7 +230,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @MytSahip**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SoyguncularTR**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -248,7 +248,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @MytSahip*❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SoyguncularTR*❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -416,7 +416,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(stag)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @MytTagBot**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SoyguncularTR**❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -448,23 +448,23 @@ async def mentionall(tagadmin):
 async def handler(event):
     # Respond whenever someone says "Hello" and something else
     if str(event.sender_id) not in SUDO_USERS:
-        return await event.reply("__Sen sahibim değilsin !__")
-    await event.reply('**Hey Bot Çalışıyor Merak Etme** \n Developer @duyguszadam')
+        return await event.reply("__Sen sahibim değilsin Dostum !__")
+    await event.reply('**Hey Bot Çalışıyor Merak Etme En iyi Şekilde Burayım** \n Developer @Hzchavo')
 
 @client.on(events.NewMessage(pattern='/durum'))
 async def handler(event):
 	
-    await event.reply('**Tagger Bot un Durum Menüsü** \n Durum: Çalışıyor✅ \n Telethon Sürümü: v1.24.0 \n Python Sürümü: v3.8+ \n Bot Sürümü: v0.2 \n Bu Botun Developeri @MytSahip dir')
+    await event.reply('**Tagger Bot un Durum Menüsü** \n Durum: Çalışıyorum✅ \n Telethon Sürümü: v1.24.0 \n Python Sürümü: v3.8+ \n Bot Sürümü: v0.2 \n Bu Botun Developeri @HzChavo dur')
 
 @client.on(events.NewMessage(pattern='/bagis'))
 async def handler(event):
 	
-    await event.reply('**Tagger Botun Bağış Menüsü** \n\nPapara No: 1744892543 \n\n  ✨')
+    await event.reply('**Tagger Botun Bağış Menüsü** \n\nPapara No: Grubumuza Gelsen Yeterli @SoyguncularTR \n\n  👻')
 
 @client.on(events.NewMessage(pattern='/reklam'))
 async def handler(event):
 	
-    await event.reply('__Botun Reklam Menüsü__\n**Reklam Veya İş Birliğimi Yapmak İstiyorsunuz Botun** [Sahibi](https://t.me/Mytsahip) **İle İletişime Geçiniz**')
+    await event.reply('__Botun Reklam Menüsü__\n**Reklam Veya İş Birliğimi Yapmak İstiyorsunuz Botun** [Sahibi](https://t.me/Hzchavo) **İle İletişime Geçiniz**')
 
-print(">> Bot çalıyor merak etme 🚀 @mytsahip bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @hzchavo bilgi alabilirsin <<")
 client.run_until_disconnected()
